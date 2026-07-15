@@ -1,0 +1,6 @@
+{
+  "name": "MoonTV 影视聚合播放器",
+  "description": "开箱即用的跨平台影视聚合播放器。基于 Next.js 14 + Tailwind CSS + TypeScript 构建，支持多源资源全网搜索、在线播放、多端同步与 PWA 体验。",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

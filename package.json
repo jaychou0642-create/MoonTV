@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "pnpm gen:runtime && pnpm gen:manifest && next dev -H 0.0.0.0",
-    "build": "pnpm gen:runtime && pnpm gen:manifest && next build",
-    "start": "next start",
+    "dev": "node scripts/convert-config.js && node scripts/generate-manifest.js && next dev -H 0.0.0.0 -p ${PORT:-3000}",
+    "build": "node scripts/convert-config.js && node scripts/generate-manifest.js && next build",
+    "start": "node scripts/convert-config.js && node scripts/generate-manifest.js && next start -H 0.0.0.0 -p ${PORT:-3000}",
     "lint": "next lint",
     "lint:fix": "eslint src --fix && pnpm format",
     "lint:strict": "eslint --max-warnings=0 src",
